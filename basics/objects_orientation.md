@@ -94,3 +94,16 @@ var2 = "myfunc"
 *var.*var2()
 
 ````
+# object index
+
+```swift
+listofallproperties = object::index("someobjectname")
+listofallfunctions = object::functions("someobjectname")
+object::delete("someobjectname") // deletes the entire object
+object::deleteproperty("someobjectname","somepropertyname") // deletes the entire object
+
+// nscript objects and simple json | only does properties as string key/stringvalue
+somejsonstring = object::tojson("someobjectname") // map a nscript object to a json string
+object::fromjson("someobjectname",somejsonstring) // map a nscript object from a json string
+
+````
