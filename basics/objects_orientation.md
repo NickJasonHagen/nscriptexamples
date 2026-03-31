@@ -79,4 +79,18 @@ for xobject in array{
 }
 ````
 
+# function dispatching
+```swift
+class myclass{
+    func myfunc(){
+        // some code
+    }
+}
 
+var = "myclass"
+var2 = "myfunc"
+
+// evaluate the classname and/or the function name
+*var.*var2()
+
+````
