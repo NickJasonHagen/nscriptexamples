@@ -97,8 +97,9 @@ var2 = "myfunc"
 # object index
 
 ```swift
-listofallproperties = object::index("someobjectname")
-listofallfunctions = object::functions("someobjectname")
+// list all the object properties
+listofallproperties = object::index("someobjectname") // returns a vector containing all objectnamereferences
+listofallfunctions = object::functions("someobjectname") // returns a vector with namereferences
 object::delete("someobjectname") // deletes the entire object
 object::deleteproperty("someobjectname","somepropertyname") // deletes the entire object
 
