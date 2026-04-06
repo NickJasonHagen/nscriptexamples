@@ -28,3 +28,20 @@ for i=5 to 10{
     print(i)//prints a number of iteration
 }
 ````
+
+## coroutines
+create a coroutine which runs on the background of the current thread.
+it runs ones per code cycle, blocking functions will block execution
+```swift
+coroutine "mycoroutinereference"{
+    if timerdiff(timer) > 5000{
+        break self
+    }
+}
+// run only each x milliseconds
+coroutine "mytimedcoroutinereference" each 100{
+    if timerdiff(timer) > 5000{
+        break self
+    }
+}
+````
