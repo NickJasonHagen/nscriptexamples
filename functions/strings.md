@@ -12,5 +12,9 @@ trimmed = trimleft(string,1) // trims 1 char from the left
 trimmed = trimright(string,1) // trims 1 char from the right
 encrypted = encrypt(string,"mypassword") // custom encryption
 encrypted = decrypt(string,"mypassword") // custom encryption
+ensuredstring = string_or(string,"this sets when the string is empty")
+base = stringtobase64(string) // base64 encrypted
+string = base64tostring(base) // base64 decrypt
+formattedstring = string(string,base) // formats all arguments to 1 string
 ````
 
